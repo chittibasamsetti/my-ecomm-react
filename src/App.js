@@ -18,7 +18,6 @@ function App() {
            <Navbar />
         <hr></hr>
         <Routes>
-          <Route index element={<Products/>}></Route>
           <Route path={`${PATH}/`} element={<Products />} />
           <Route path={`${PATH}/order`} element={<Orders />} />
           <Route path={`${PATH}/cart`} element={<Cart />} />

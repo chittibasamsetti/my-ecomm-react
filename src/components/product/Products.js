@@ -3,6 +3,7 @@ import products from "./products.json";
 import "./Products.css";
 import AddButton from "./AddButton.js";
 export default function Products() {
+    const PATH = process.env.REACT_APP_PATH;
   return (
     <div className="Product-container">
       {products &&
@@ -12,7 +13,7 @@ export default function Products() {
               <img
                
                 className="Product-img"
-                src={value.image}
+                src={`${PATH}${value.image}`}
                 alt={value.name}  
               />
             </div>
